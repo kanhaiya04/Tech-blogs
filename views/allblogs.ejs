@@ -1,0 +1,35 @@
+<%- include("partials/header")-%>
+<div class="allblogs">
+  <%blogs%>
+  <% console.log(blogs.length); %>
+
+<h1>All blogs</h1>
+<% for(var i=blogs.length-1;i>=0;i--){ %>
+  <div class="row" class="blog_row">
+
+  <% for(var j=0;j<3&& i>=0;j++){%>
+    <div class="col">
+    <div  class="card" style="width: 18rem;">
+      <img src="<%= blogs[i].img1 %>" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%= blogs[i].title %></h5>
+        <p class="card-text"><span style="
+      display:block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;">
+      <%= blogs[i].content%>
+    </span>
+    </p>
+        <a href="/blogs/<%=blogs[i].title%>" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+    </div>
+    <% if(j!==2){ %>
+    <% i--; }%>
+  <% } %>
+  </div>
+<%}%>
+
+</div>
+<%- include("partials/footer")-%>

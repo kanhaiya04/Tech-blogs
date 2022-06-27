@@ -1,0 +1,61 @@
+<%- include("partials/header")-%>
+
+<section id="heading">
+  <div class="row">
+
+  <div class="col" >
+<h1 class="heading-text">Presenting you the<br>Latest Tech News <br>By TechBlogs</h1>
+  </div>
+  <div class="col">
+    <img class="heading-img" src="/images/heading-01.jpeg" alt="not found">
+
+  </div>
+
+  </div>
+
+
+</section>
+<section id="latest-blog">
+  <div class="row">
+    <div class="col">
+    <strong><h1>Latest Blog</h1></strong>
+    </div>
+
+<div class="col" style="text-align:right;">
+
+  <button style="width:7rem;" type="button" class="btn btn-dark"><a class="blogs_link" href="/blogs">All Blogs</a></button>
+</div>
+
+    <h2><%=title %></h2>
+    <p>
+  <img class="latest-img" src="<%=img %>" alt="not found">
+  <%= content %>... <a href="/blogs/<%=title%>">Read More</a>
+  </p>
+
+  </div>
+</section>
+
+<section id="upcoming_blogs">
+  <div class="list">
+    <h1>Upcoming</h1>
+    <ul class="list-group">
+  <li class="list-group-item" style="background-color:white;color:black;">Privacy</li>
+  <li class="list-group-item" style="background-color:grey;color:white;">Data & informatics</li>
+  <li class="list-group-item" style="background-color:white;color:black;">Networking</li>
+  <li class="list-group-item " style="background-color:grey;color:white;">Health IT</li>
+  <li class="list-group-item" style="background-color:while;color:black;">Internet of Things (IoT)</li>
+</ul>
+  </div>
+</section>
+
+<section id="suggestions">
+<h1>Suggestions Box</h1>
+<label for=""><strong>Topics on Which you want blogs in Future:-</strong></label>
+<br>
+<br>
+<input class="form-control" type="text" placeholder="Enter here">
+<button style="width:7rem;margin-top:0.7rem;" type="submit" class="btn btn-dark"><a class="blogs_link" href="/">Submit</a></button>
+</section>
+
+
+<%- include("partials/footer")-%>

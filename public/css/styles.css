@@ -1,0 +1,140 @@
+body{
+  font-family: 'Montserrat';
+  line-height: 1.5;
+  /* text-align: center; */
+}
+
+
+#Navbar{
+  padding: 0 5%;
+  background-color: black;
+}
+
+
+/* heading */
+
+#heading{
+  background-color: black;
+  padding: 2% 5%;
+  color: white;
+  /* background-color: grey; */
+  background-image: url("/images/heading-bg.jpg");
+}
+.heading-img{
+  width: 35rem;
+  height: 27rem;
+}
+.heading-text{
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 30%;
+}
+
+
+
+/* latest_blogs */
+
+.latest-img{
+  margin: 0.7rem;
+  margin-left: 0;
+  width: 350px;
+  height: 250px;
+  float: left;
+}
+
+#latest-blog{
+  padding: 2% 10%;
+}
+
+.blogs_link, .blogs_link:hover, .blogs_link:focus, .blogs_link:active {
+      text-decoration: none;
+      color: inherit;
+}
+
+
+
+/* blog */
+
+.web3-img{
+  border-radius: 50%;
+  width: 250px;
+  float: right;
+  height: 250px;
+  shape-outside: circle(50%);
+  shape-margin: 0.5rem;
+
+}
+
+.web3-img2{
+  margin-top: 1.3rem;
+  margin-left: 0.7rem;
+  width: 440px;
+  float: right;
+  height: 250px;
+}
+
+.blog-div{
+  padding: 1% 10%;
+}
+
+
+
+/* compose from */
+
+.form{
+  padding: 2% 15%;
+}
+
+
+
+/* allblogs */
+.allblogs{
+  padding: 1% 10%;
+}
+
+.blog_row{
+  padding-bottom: 1.3rem;
+}
+
+/* upcoming */
+#upcoming_blogs{
+  text-align: center;
+  padding: 5% 10%;
+  color: white;
+  background-color: black;
+}
+.list{
+  margin-left:30%;
+  margin-right: 30%;
+}
+
+
+/* suggestions */
+
+#suggestions{
+  padding: 5% 30%;
+  text-align: center;
+}
+
+
+@media(max-width: 768px){
+  .list{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* about us */
+
+.about_us{
+  height: 2293px;
+  width:4896px;
+    background-image: url("/images/about.jpg");
+}
+
+/* login */
+.container{
+  padding: 0 0 5% 0;
+}
