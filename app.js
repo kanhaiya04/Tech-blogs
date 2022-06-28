@@ -83,7 +83,6 @@ app.get("/blogs/:name",(req,res)=>{
           img1=dbcontent[i].img1;
           img2=dbcontent[i].img2;
           refer=dbcontent[i].refer;
-          content=content.replace(/\\n/g,"<br>");
           break;
         }
       }
