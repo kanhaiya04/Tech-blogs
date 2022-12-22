@@ -3,9 +3,9 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const ejs = require("ejs");
 const _=require("lodash");
-
 const app = express();
-
+var jsdom = require("jsdom");
+$ = require('jquery')(new jsdom.JSDOM().window);
 mongoose.connect("mongodb+srv://kanhaiya:Coding04@cluster0.pcdn5op.mongodb.net/techblogs");
 
 const blogsSchema=new mongoose.Schema({
@@ -29,6 +29,11 @@ const Blog=mongoose.model("Blog",blogsSchema);
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+
+// $("p").css("color","Red");
+// $("button.suggestions").mouseenter(()=>{
+//   console.log("clicked");
+// })
 
 app.get("/",function(req,res){
   Blog.find({},(err,dbcontent)=>{
