@@ -4,9 +4,10 @@ const mongoose = require("mongoose");
 const ejs = require("ejs");
 const _=require("lodash");
 const app = express();
+require('dotenv').config('/.env')
 var jsdom = require("jsdom");
 $ = require('jquery')(new jsdom.JSDOM().window);
-mongoose.connect("mongodb+srv://kanhaiya:Coding04@cluster0.pcdn5op.mongodb.net/techblogs");
+mongoose.connect(process.env.MONGOURL);
 
 const blogsSchema=new mongoose.Schema({
   title:String,
